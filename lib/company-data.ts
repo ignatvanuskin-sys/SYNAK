@@ -75,6 +75,7 @@ export const navItems = [
   { label: "Услуги", href: "#services" },
   { label: "Как обращаемся", href: "#how" },
   { label: "Отзывы", href: "#reviews" },
+  { label: "Запись", href: "#booking" },
   { label: "Контакты", href: "#contacts" },
 ] as const;
 

@@ -44,6 +44,7 @@ components/
   reviews.tsx         # рейтинг со ссылкой на 2ГИС
   faq.tsx             # аккордеон
   contacts.tsx        # контакты + статичный блок карты
+  booking-form.tsx    # форма записи: имя, телефон, авто, услуга -> WhatsApp
   mobile-cta.tsx      # нижняя панель Позвонить/WhatsApp
   footer.tsx
   reveal-observer.tsx # лёгкий reveal при прокрутке
@@ -101,6 +102,7 @@ public/
 - контраст WCAG AA (акцентные варианты `accent-strong`/`accent-text`/`accent-bright`)
 - страницы 404 и /privacy/ корректны
 - все ссылки: tel: / wa.me / 2ГИС проверены
+- форма записи: валидация телефона, popup WhatsApp с готовым текстом (имя/телефон/авто/услуга), состояние успеха с фоллбеком-звонком
 - ESLint (next/core-web-vitals) — 0 ошибок
 - skip-link «Перейти к содержимому», PNG-фоллбеки favicon (32 px + Apple 180 px)
 - security-заголовки: nosniff, DENY, Referrer-Policy, Permissions-Policy, HSTS

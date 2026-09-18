@@ -9,7 +9,7 @@
     "lint": "next lint",
     "icons": "node scripts/gen-icons.js",
     "serve": "node scripts/static-server.js 8080",
-    "qa": "node scripts/verify.js && node scripts/verify-extra.js",
+    "qa": "node scripts/verify.js && node scripts/verify-extra.js && node scripts/verify-booking.js",
     "lighthouse": "node scripts/lighthouse-run.js"
   },
   "dependencies": {

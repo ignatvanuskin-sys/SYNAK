@@ -8,6 +8,7 @@ import { Gallery } from "@/components/gallery";
 import { Reviews } from "@/components/reviews";
 import { FAQ } from "@/components/faq";
 import { Contacts } from "@/components/contacts";
+import { BookingForm } from "@/components/booking-form";
 import { Footer } from "@/components/footer";
 import { MobileCTA } from "@/components/mobile-cta";
 import { RevealObserver } from "@/components/reveal-observer";
@@ -29,6 +30,7 @@ export default function Home() {
         <Reviews />
         <FAQ />
         <Contacts />
+        <BookingForm />
       </main>
       <Footer />
       <MobileCTA />

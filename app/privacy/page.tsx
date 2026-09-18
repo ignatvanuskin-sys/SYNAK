@@ -42,6 +42,16 @@ export default function PrivacyPage() {
           </p>
 
           <h2 className="font-heading text-[20px] font-bold text-ink">
+            Форма записи
+          </h2>
+          <p>
+            Форма записи на сайте не отправляет данные на сервер. При нажатии
+            кнопки указанные вами имя, телефон, марка автомобиля и услуга
+            формируются в готовое сообщение и открываются в WhatsApp — отправку
+            вы завершаете самостоятельно.
+          </p>
+
+          <h2 className="font-heading text-[20px] font-bold text-ink">
             Что сайт не делает
           </h2>
           <ul className="list-disc space-y-1.5 pl-5">
