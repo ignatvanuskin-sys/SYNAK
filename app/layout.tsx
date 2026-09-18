@@ -50,7 +50,11 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   robots: {
     index: true,
@@ -90,6 +94,12 @@ export default function RootLayout({
   return (
     <html lang="ru" className={`${heading.variable} ${body.variable}`}>
       <body className="bg-surface font-body text-ink">
+        <a
+          href="#main-content"
+          className="skip-link"
+        >
+          Перейти к содержимому
+        </a>
         {children}
         <script
           type="application/ld+json"

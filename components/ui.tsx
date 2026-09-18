@@ -227,7 +227,6 @@ export function Section({
     <section
       id={id}
       className={`py-16 md:py-24 ${className}`}
-      aria-label={undefined}
     >
       {children}
     </section>

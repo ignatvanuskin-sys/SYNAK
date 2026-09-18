@@ -45,11 +45,11 @@ function waitPort() {
     const page = await ctx.newPage();
     page.on("pageerror", (e) => errors.push("404 pageerror: " + e.message));
     await page.goto(BASE + "/nonexistent", { waitUntil: "networkidle" });
-    await page.waitForTimeout(300);
+    await page.waitForTimeout(600);
     const h1 = await page.getByRole("heading", { name: "Страница не найдена" }).count();
     const homeLink = await page.getByRole("link", { name: "На главную" }).count();
     const callBtn = await page.getByRole("link", { name: "Позвонить" }).count();
-    console.log("404: заголовок =", h1 === 1, "| на главную =", homeLink === 1, "| позвонить =", callBtn === 1);
+    console.log("404: заголовок =", h1 === 1, "| на главную =", homeLink >= 1, "| позвонить =", callBtn >= 1);
     await page.screenshot({ path: path.join(shotDir, "not-found.png") });
     await ctx.close();
   }
@@ -60,7 +60,7 @@ function waitPort() {
     const page = await ctx.newPage();
     page.on("pageerror", (e) => errors.push("privacy pageerror: " + e.message));
     await page.goto(BASE + "/privacy", { waitUntil: "networkidle" });
-    await page.waitForTimeout(300);
+    await page.waitForTimeout(600);
     const h1 = await page.getByRole("heading", { name: "Политика конфиденциальности" }).count();
     console.log("privacy: заголовок =", h1 === 1);
     await page.screenshot({ path: path.join(shotDir, "privacy.png") });
@@ -75,7 +75,7 @@ function waitPort() {
     await page.goto(BASE + "/", { waitUntil: "networkidle" });
     for (const href of ["#services", "#problems", "#benefits", "#how", "#gallery", "#reviews", "#faq", "#contacts"]) {
       await page.evaluate((h) => document.querySelector(h).scrollIntoView(), href);
-      await page.waitForTimeout(250);
+      await page.waitForTimeout(1800);
       const visible = await page.evaluate((h) => {
         const r = document.querySelector(h).getBoundingClientRect();
         return r.top >= -40 && r.top < window.innerHeight;

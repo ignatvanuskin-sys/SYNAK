@@ -16,7 +16,6 @@ export function Header() {
         <a
           href="#top"
           className="flex shrink-0 flex-col leading-none"
-          aria-label="Сунақ — на главную"
         >
           <span className="font-heading text-[21px] font-extrabold tracking-tight text-ink md:text-[23px]">
             Сунақ

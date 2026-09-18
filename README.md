@@ -7,13 +7,19 @@
 ## Команды
 
 ```bash
-npm install     # установка
-npm run dev     # разработка
-npm run build   # статическая сборка в out/
-npm run start   # не используется (статический сайт)
+npm install        # установка
+npm run dev        # разработка
+npm run build      # статическая сборка в out/
+npm run lint       # ESLint (next/core-web-vitals)
+npm run serve      # локальный сервер out/ на :8080 (gzip, cache)
+npm run qa         # Playwright-проверки: overflow, меню, FAQ, lightbox, 404, privacy, якоря
+npm run lighthouse # Lighthouse-прогон (P/A/BP/SEO)
+npm run icons      # регенерация PNG-фоллбеков favicon из favicon.svg
 ```
 
 Готовый сайт лежит в `out/` — это полная статика, которую можно публиковать на любом статическом хостинге (Netlify, Cloudflare Pages, GitHub Pages, обычный nginx).
+
+Security- и cache-заголовки для Netlify/Cloudflare задаются файлом `public/_headers` (копируется в `out/`). CI (lint + build + артефакт `out/`) — `.github/workflows/ci.yml`.
 
 ## Структура
 
@@ -91,7 +97,10 @@ public/
 - мобильное меню: открытие, Escape, выбор пункта, блокировка скролла
 - FAQ и lightbox — мышь + клавиатура, закрытие по Escape
 - console errors — 0
-- Lighthouse: Performance 94 / Accessibility 100 / Best Practices 100 / SEO 100
+- Lighthouse: Performance 93 / Accessibility 100 / Best Practices 100 / SEO 100
 - контраст WCAG AA (акцентные варианты `accent-strong`/`accent-text`/`accent-bright`)
 - страницы 404 и /privacy/ корректны
 - все ссылки: tel: / wa.me / 2ГИС проверены
+- ESLint (next/core-web-vitals) — 0 ошибок
+- skip-link «Перейти к содержимому», PNG-фоллбеки favicon (32 px + Apple 180 px)
+- security-заголовки: nosniff, DENY, Referrer-Policy, Permissions-Policy, HSTS

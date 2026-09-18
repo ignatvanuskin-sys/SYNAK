@@ -5,7 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "icons": "node scripts/gen-icons.js",
+    "serve": "node scripts/static-server.js 8080",
+    "qa": "node scripts/verify.js && node scripts/verify-extra.js",
+    "lighthouse": "node scripts/lighthouse-run.js"
   },
   "dependencies": {
     "next": "^15.5.25",
@@ -17,6 +22,8 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.25",
     "lighthouse": "^13.4.1",
     "playwright": "^1.63.0",
     "postcss": "^8.4.49",

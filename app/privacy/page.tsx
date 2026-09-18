@@ -14,7 +14,7 @@ export default function PrivacyPage() {
   return (
     <>
       <Header />
-      <main className="shell max-w-3xl py-16 md:py-24">
+      <main id="main-content" className="shell max-w-3xl py-16 md:py-24">
         <h1 className="section-title">Политика конфиденциальности</h1>
 
         <div className="mt-8 space-y-6 text-[16px] leading-relaxed text-ink-soft md:text-[17px]">

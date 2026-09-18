@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { company } from "@/lib/company-data";
 import { WhatsAppIcon } from "@/components/ui";
 
@@ -53,12 +54,12 @@ export function Footer() {
               </a>
             </p>
             <p>
-              <a
+              <Link
                 href="/privacy/"
                 className="text-[14px] text-ink-soft underline underline-offset-2 transition-colors hover:text-accent-text"
               >
                 Политика конфиденциальности
-              </a>
+              </Link>
             </p>
           </nav>
         </div>

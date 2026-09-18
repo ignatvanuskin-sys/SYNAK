@@ -1,4 +1,3 @@
-import { company } from "@/lib/company-data";
 import { Section, WhatsAppLink, ArrowRightIcon } from "@/components/ui";
 
 /* ---------- Иконки преимуществ ---------- */

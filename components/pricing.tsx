@@ -1,4 +1,3 @@
-import { company } from "@/lib/company-data";
 import { PhoneLink, WhatsAppLink } from "@/components/ui";
 
 /* ---------- PricingClarification ---------- */
