@@ -1,4 +1,5 @@
 import { ArrowDownRight, ArrowUpRight, Phone, Star } from "lucide-react";
+import heroBg from "@/assets/hero-bg.webp";
 
 interface HeroProps {
   onBookingOpen: () => void;
@@ -13,8 +14,7 @@ export function Hero({ onBookingOpen }: HeroProps) {
       <div
         className="absolute inset-0 -z-20 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('/images/workshop-hero.webp')",
+          backgroundImage: `url('${heroBg}')`,
         }}
       />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(16,35,63,.94)_0%,rgba(16,35,63,.72)_38%,rgba(16,35,63,.18)_76%,rgba(16,35,63,.36)_100%)]" />
