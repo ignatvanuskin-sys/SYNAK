@@ -1,40 +1,46 @@
 import { BUSINESS } from "@shared/const";
+import autoRepairImage from "@/assets/auto-repair.webp";
+import bodyRepairImage from "@/assets/body-repair.webp";
+import metalworkingImage from "@/assets/metalworking.webp";
+import weldingImage from "@/assets/welding.webp";
+import workshopExteriorImage from "@/assets/workshop-exterior.webp";
+import workshopHeroImage from "@/assets/workshop-hero.webp";
 
 export const phone = BUSINESS.phone;
 export const phoneHref = BUSINESS.phoneHref;
 export const whatsappHref = `https://wa.me/${BUSINESS.whatsappNumber}?text=${encodeURIComponent(BUSINESS.whatsappDefaultText)}`;
 export const routeHref = BUSINESS.gisUrl;
 
-export const heroImage = "/images/workshop-hero.webp";
+export const heroImage = workshopHeroImage;
 
 export const images = [
   {
-    src: "/images/workshop-exterior.webp",
+    src: workshopExteriorImage,
     alt: "Фасад автосервиса Сунақ в Астане",
     label: "Фасад СТО",
   },
   {
-    src: "/images/auto-repair.webp",
+    src: autoRepairImage,
     alt: "Рабочая зона и автомобиль на подъёмнике в автосервисе Сунақ",
     label: "Зона ремонта",
   },
   {
-    src: "/images/body-repair.webp",
+    src: bodyRepairImage,
     alt: "Сварка и ремонт кузовных элементов",
     label: "Кузовные работы",
   },
   {
-    src: "/images/metalworking.webp",
+    src: metalworkingImage,
     alt: "Токарные и фрезерные работы в автосервисе",
     label: "Металлообработка",
   },
   {
-    src: "/images/welding.webp",
+    src: weldingImage,
     alt: "Аргонная сварка элементов кузова и выхлопных систем",
     label: "Сварочные работы",
   },
   {
-    src: "/images/workshop-hero.webp",
+    src: workshopHeroImage,
     alt: "Автомобиль на обслуживании в боксе",
     label: "Легковой бокс",
   },
