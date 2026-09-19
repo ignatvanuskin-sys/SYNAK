@@ -36,7 +36,7 @@ export function Gallery({ onSelectImage }: GalleryProps) {
             <button
               key={image.src}
               type="button"
-              className={`group reveal relative overflow-hidden bg-ink text-left ${image.className}`}
+              className={`group reveal relative overflow-hidden bg-ink text-left`}
               style={{ animationDelay: `${index * 70}ms` }}
               onClick={() => onSelectImage(image)}
               aria-label={`Открыть фото: ${image.label}`}

@@ -5,42 +5,38 @@ export const phoneHref = BUSINESS.phoneHref;
 export const whatsappHref = `https://wa.me/${BUSINESS.whatsappNumber}?text=${encodeURIComponent(BUSINESS.whatsappDefaultText)}`;
 export const routeHref = BUSINESS.gisUrl;
 
+export const heroImage = "/images/workshop-hero.webp";
+
 export const images = [
   {
-    src: "/manus-storage/real-workshop_a3e2a775.jpg",
-    alt: "Рабочая зона и автомобиль на подъёмнике в автосервисе Сунақ",
-    label: "Зона ремонта",
-    className: "md:col-span-2 md:row-span-2",
-  },
-  {
-    src: "/manus-storage/real-facade_608b364a.jpg",
+    src: "/images/workshop-exterior.webp",
     alt: "Фасад автосервиса Сунақ в Астане",
     label: "Фасад СТО",
-    className: "md:col-span-1",
   },
   {
-    src: "/manus-storage/real-part_e04f3405.jpg",
+    src: "/images/auto-repair.webp",
+    alt: "Рабочая зона и автомобиль на подъёмнике в автосервисе Сунақ",
+    label: "Зона ремонта",
+  },
+  {
+    src: "/images/body-repair.webp",
     alt: "Сварка и ремонт кузовных элементов",
     label: "Кузовные работы",
-    className: "md:col-span-1",
   },
   {
-    src: "/manus-storage/real-engine_a8ba978f.jpg",
-    alt: "Обслуживание двигателя автомобиля",
-    label: "Ремонт мотора",
-    className: "md:col-span-1",
+    src: "/images/metalworking.webp",
+    alt: "Токарные и фрезерные работы в автосервисе",
+    label: "Металлообработка",
   },
   {
-    src: "/manus-storage/real-exterior_f6b270f0.jpg",
-    alt: "Здание и парковка автосервиса",
-    label: "Парковочная зона",
-    className: "md:col-span-1",
+    src: "/images/welding.webp",
+    alt: "Аргонная сварка элементов кузова и выхлопных систем",
+    label: "Сварочные работы",
   },
   {
-    src: "/manus-storage/real-car_d6df2f30.jpg",
+    src: "/images/workshop-hero.webp",
     alt: "Автомобиль на обслуживании в боксе",
     label: "Легковой бокс",
-    className: "md:col-span-1",
   },
 ] as const;
 

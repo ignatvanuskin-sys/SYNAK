@@ -14,7 +14,7 @@ export function Hero({ onBookingOpen }: HeroProps) {
         className="absolute inset-0 -z-20 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('/manus-storage/real-facade-hero_3818b9c2.webp'), url('/manus-storage/real-facade_608b364a.jpg')",
+            "url('/images/workshop-hero.webp')",
         }}
       />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(16,35,63,.94)_0%,rgba(16,35,63,.72)_38%,rgba(16,35,63,.18)_76%,rgba(16,35,63,.36)_100%)]" />
