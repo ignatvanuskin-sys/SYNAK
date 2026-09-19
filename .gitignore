@@ -1,8 +1,43 @@
-node_modules
-.next
-out
-npm-debug.log*
-.DS_Store
+# Dependencies
+node_modules/
+.pnp.*
+.pnp.js
+
+# Build output
+dist/
+build/
 *.tsbuildinfo
-next-env.d.ts
-shots
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Manus dev artifacts
+.manus-logs/
+.manus/
+__manus__/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+.cache/
+coverage/
+.vite/
